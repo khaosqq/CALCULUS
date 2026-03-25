@@ -1,76 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculo</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        
-        <div class="nav-container">
-            <audio controls>
-                <source src="sound/audio1.ogg" type="audio/ogg">
-                Tu navegador no soporta audio.
-            </audio>
-            <div class="logo">
-                <a href="#">Calulus</a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Derivadas</a></li>
-                <li><a href="#">Integrales</a></li>
-                <li><a href="#" class="btn-contact">Contact</a></li>
-            </ul>
+  <header class="header">
+    <div class="nav-container">
+      <audio controls>
+        <source src="sound/audio1.ogg" type="audio/ogg">
+        Tu navegador no soporta audio.
+      </audio>
+      <div class="logo">
+        <a href="#">Calulus</a>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Derivadas</a></li>
+        <li><a href="#">Integrales</a></li>
+        <li><a href="#" class="btn-contact">Contact</a></li>
+      </ul>
+      <!-- Botón de hamburguesa (solo móvil) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
 
-            <!-- Boton de hamburguesa (solo movil) -->
-             <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-             </div>
-        </div>
-    </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenido a Calculus Magnus</h1>
+      <p>Tu recurso definitivo para aprender cálculo de manera fácil y efectiva.</p>
+      <a href="#" class="btn-contact">Comenzar</a>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bienvenido a Calculus Magnus</h1>
-            <p>Tu recurso definitivo para aprender cálculo de manera fácil y efectiva.</p>
-            <a href="#" class="btn-contact">Comenzar</a>
-        </div>
-    </section>
+  <section class="main-content">
+    <div class="content-indice">
+      <h2>Índice de Contenido</h2>
+      <ul>
+        <li><a href="#" onclick="mostrarCapitulo('cap1', event)">Capítulo 1. Funciones elementales</a></li>
+        <li><a href="#" onclick="mostrarCapitulo('cap2', event)">Capítulo 2. Límite y continuidad</a></li>
+        <li><a href="#" onclick="mostrarCapitulo('cap3', event)">Capítulo 3. La derivada</a></li>
+        <li><a href="#" onclick="mostrarCapitulo('cap4', event)">Capítulo 4. Aplicaciones de la derivada</a></li>
+        <li><a href="#" onclick="mostrarCapitulo('cap5', event)">Capítulo 5. La diferencial y la integral</a></li>
+        <li><a href="#" onclick="mostrarCapitulo('cap6', event)">Capítulo 6. Aplicaciones de las integrales</a></li>
+      </ul>
+    </div>
+  </section>
+<!-- Contenido de capítulos -->
+<section id="cap1" class="main-content contenido-capitulo" style="display:none;">
+  <div class="content-funciones-elementales">
+    <h2>Funciones Elementales</h2>
+    <ul>
+      <li><a href="pages/funciones elementales/concepto-funcion-grafica.html">Concepto de función y su gráfica</a></li>
+      <li><a href="pages/funciones elementales/funciones-potenciales.html">Funciones potencia, polinomiales y racionales</a></li>
+      <li><a href="pages/funciones elementales/funciones-exponenciales.html">Funciones exponencial y logarítmica</a></li>
+      <li><a href="pages/funciones elementales/funciones-trigonometricas.html">Funciones trigonométricas</a></li>
+      <li><a href="pages/funciones elementales/funciones-trigonometricas-inversas.html">Funciones trigonométricas inversas</a></li>
+    </ul>
+  </div>
+</section>
 
-    <section class="main-content">
-        <div class="content-funciones-elementales">
-            <h2>Funciones Elementales</h2>
-            <ul>
-                <li><a href="pages/funciones elementales/concepto-funcion-grafica.html">Concepto de funcion y su grafica</a></li>
-                <li><a href="pages/funciones elementales/funciones-potenciales.html">Funciones potencia, polinomiales y racionales</a></li>
-                <li><a href="pages/funciones elementales/funciones-exponenciales.html">Funciones exponencial y logarítmica</a></li>
-                <li><a href="pages/funciones elementales/funciones-trigonometricas.html">Funciones trigonométricas</a></li>
-                <li><a href="pages/funciones elementales/funciones-trigonometricas-inversas.html">Funciones trigonométricas inversas</a></li>
-            </ul>
-        </div>
+<section id="cap2" class="main-content contenido-capitulo" style="display:none;">
+  <div class="content-funciones-elementales">
+    <h2>Límite y Continuidad</h2>
+    <ul>
+      <li><a href="pages/limite/nocion-intuitiva.html">Noción intuitiva de límite</a></li>
+      <li><a href="pages/limite/nocion-laterales.html">Noción de límite y límites laterales</a></li>
+      <li><a href="pages/limite/limites-infinito.html">Límites en infinito. Asíntotas</a></li>
+      <li><a href="pages/limite/calculo.html">Cálculo de límites</a></li>
+      <li><a href="pages/limite/trigonometricos.html">Límites de funciones trigonométricas</a></li>
+      <li><a href="pages/limite/exponenciales.html">Límites de funciones exponenciales y logarítmicas</a></li>
+      <li><a href="pages/limite/continuidad.html">Definición de función continua</a></li>
+      <li><a href="pages/limite/propiedades.html">Propiedades de las funciones continuas</a></li>
+      <li><a href="pages/limite/discontinuidades.html">Discontinuidades</a></li>
+    </ul>
+  </div>
+</section>
+<section id="cap3" class="main-content contenido-capitulo" style="display:none;">
+  <div class="content-funciones-elementales">
+    <h2>La Derivada</h2>
+    <ul>
+      <li><a href="pages/derivada/definicion.html">Definición de derivada</a></li>
+      <li><a href="pages/derivada/regla-producto.html">Regla del producto</a></li>
+      <li><a href="pages/derivada/regla-cociente.html">Regla del cociente</a></li>
+      <li><a href="pages/derivada/exponenciales-logaritmicas.html">Derivadas de funciones exponenciales y logarítmicas</a></li>
+      <li><a href="pages/derivada/trigonometricas-inversas.html">Derivadas de funciones trigonométricas inversas</a></li>
+      <li><a href="pages/derivada/exponenciales-logaritmicas-inversas.html">Derivadas de funciones exponenciales y logarítmicas inversas</a></li>
+      <li><a href="pages/derivada/interpretacion-geometrica.html">Interpretación geométrica de la derivada</a></li>
+      <li><a href="pages/derivada/razon-cambio.html">Razón de cambio instantáneo</a></li>
+      <li><a href="pages/derivada/diferencial.html">Concepto de diferencial</a></li>
+      <li><a href="pages/derivada/implicitas.html">Derivación de funciones implícitas</a></li>
+      <li><a href="pages/derivada/ecuaciones-segundo-orden.html">Ecuaciones de segundo orden</a></li>
+      <li><a href="pages/derivada/regla-cadena.html">Regla de la cadena</a></li>
+    </ul>
+  </div>
+</section>
 
-    </section>
-    
+<section id="cap4" class="main-content contenido-capitulo" style="display:none;">
+  <div class="content-funciones-elementales">
+    <h2>Aplicaciones de la Derivada</h2>
+    <ul>
+      <li><a href="pages/aplicaciones-derivada/extremos.html">Extremos relativos</a></li>
+      <li><a href="pages/aplicaciones-derivada/concavidad.html">Concavidad y puntos de inflexión</a></li>
+      <li><a href="pages/aplicaciones-derivada/estudio-funciones.html">Estudio de funciones</a></li>
+      <li><a href="pages/aplicaciones-derivada/problemas.html">Problemas de aplicación</a></li>
+    </ul>
+  </div>
+</section>
 
-        <li><a href="aqui va el enlace"><img src="img/boton_ayuda.png" alt="Ayuda!" class="ayuda"></a></li>
+<section id="cap5" class="main-content contenido-capitulo" style="display:none;">
+  <div class="content-funciones-elementales">
+    <h2>La Diferencial y la Integral</h2>
+    <ul>
+      <li><a href="pages/diferencial-integral/definicion.html">Definición y ejemplos de la diferencial</a></li>
+      <li><a href="pages/diferencial-integral/propiedades.html">Propiedades geométricas de la diferencial</a></li>
+      <li><a href="pages/diferencial-integral/incremento.html">Interpretación y aproximación del incremento</a></li>
+      <li><a href="pages/diferencial-integral/antiderivadas.html">Antiderivadas: definición y ejemplos</a></li>
+      <li><a href="pages/diferencial-integral/constante.html">Constante de integración</a></li>
+      <li><a href="pages/diferencial-integral/significado.html">Significado físico de la constante de integración</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="cap6" class="main-content contenido-capitulo" style="display:none;">
+  <div class="content-funciones-elementales">
+    <h2>Aplicaciones de las Integrales</h2>
+    <ul>
+      <li><a href="pages/integrales/teorema-fundamental.html">Teorema fundamental del cálculo integral</a></li>
+      <li><a href="pages/integrales/valor-promedio.html">Valor promedio de una función continua</a></li>
+      <li><a href="pages/integrales/solidez.html">Solidez de rotación</a></li>
+      <li><a href="pages/integrales/superficies.html">Superficies de revolución</a></li>
+      <li><a href="pages/integrales/economicas.html">Aplicaciones económicas de la integral definida</a></li>
+      <li><a href="pages/integrales/precio-ingreso.html">Precio e ingreso total</a></li>
+      <li><a href="pages/integrales/costo-ingreso.html">Costo e ingreso marginal</a></li>
+      <li><a href="pages/integrales/curvas.html">Curvas de la región plana</a></li>
+      <li><a href="pages/integrales/superficie-consumidor.html">Superficie del consumidor y del productor</a></li>
+    </ul>
+  </div>
+</section>
 
 
+ <script>
+    function mostrarCapitulo(id, event) {
+      if (event) event.preventDefault();
+      document.querySelectorAll('.contenido-capitulo').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
 
-    <script src="js/menu-hamburgues.js"></script>
+  <!-- Botón de ayuda -->
+  <a href="aqui va el enlace"><img src="img/boton_ayuda.png" alt="Ayuda!" class="ayuda"></a>
+
+  <script src="js/menu-hamburgues.js"></script>
                     
-        <footer class="bottom">
-			<p>Página web realizada para fines netamente académicos por: Wolf Tech© 2026</p>
-			<div class="social">
-			<a href="aqui va el enlace"><img src="img/boton_facebook.png" alt="Facebook"></a>
-			<a href="aqui va el enlace"><img src="img/boton_instagram.png" alt="Instagram"></a>
-			<a href="aqui va el enlace"><img src="img/boton_linkedin.png" alt="LinkedIn"></a>
-			</div>
-			<p>Ingenieros en formación Ronald Andrés Nieto Collante y Jhorman Villalobos<br>Aguachica</p>
-			<small>"El éxito es como los pedos, la gente se molesta cuando no es de ellos." - Bill Gates</small>
-		</footer>
+  <footer class="bottom">
+    <p>Página web realizada para fines netamente académicos por: Wolf Tech© 2026</p>
+    <div class="social">
+      <a href="aqui va el enlace"><img src="images/boton_facebook.png" alt="Facebook"></a>
+      <a href="aqui va el enlace"><img src="images/boton_instagram.png" alt="Instagram"></a>
+      <a href="aqui va el enlace"><img src="images/boton_linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>Ingenieros en formación Ronald Andrés Nieto Collante y Jhorman Villalobos<br>Aguachica</p>
+    <small>"El éxito es como los pedos, la gente se molesta cuando no es de ellos." - Bill Gates</small>
+  </footer>
+  
 </body>
 </html>
